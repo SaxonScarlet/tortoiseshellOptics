@@ -1,0 +1,85 @@
+/* Global */
+html {
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.4rem;
+  /*Font*/
+  font-family: Helvetica;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header */
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /*Height at Large*/
+  height: 30rem;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 0;
+
+  /*Flex Container*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div {
+  /*Flex Container*/
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+
+nav span {
+  margin-left: 1rem;
+}
+
+ul {
+  /*Margin Right Split in ul li*/
+  margin-right: 1rem;
+}
+
+ul li {
+  /*Padding split with ul margin*/
+  padding: 0 1rem;
+  display: inline;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+#main-banner {
+  background-color: white;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+}
