@@ -1,11 +1,12 @@
 /* Global */
 html {
+    /*Base font size*/
   font-size: 18px;
 }
 
 body {
   line-height: 1.4rem;
-  /*Font*/
+    /*Base Font*/
   font-family: Helvetica;
 }
 
@@ -14,17 +15,13 @@ body {
   margin: auto;
 }
 
-.flex {
-  display: flex;
-}
-
 /* Header */
 header {
   background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
 
-  /*Height at Large*/
+    /*Height at Large Screen*/
   height: 30rem;
   background-size: cover;
   padding-top: 1rem;
@@ -35,14 +32,14 @@ nav {
   color: white;
   padding: 1rem 0;
 
-  /*Flex Container*/
+    /*Flex Container*/
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 nav div {
-  /*Flex Container*/
+    /*Flex Container*/
   display: flex;
   align-items: center;
 }
@@ -57,17 +54,20 @@ nav span {
 }
 
 ul {
-  /*Margin Right Split in ul li*/
+    /*Margin Right Split in ul li*/
   margin-right: 1rem;
 }
 
 ul li {
-  /*Padding split with ul margin*/
+    /*Padding split with ul margin*/
   padding: 0 1rem;
+    /*Make it inline*/
   display: inline;
 }
 
-header .flex {
+header div.container {
+  display: flex;
+    /*Align right*/
   justify-content: flex-end;
 }
 
@@ -81,5 +81,34 @@ h1 {
   background-color: white;
   margin-top: 10rem;
   padding: 1.5rem 5rem;
+  /*Offset to the right*/
   margin-right: -2rem;
+}
+
+/*Services*/
+  /*Images*/
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.servicesItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+    /*Margin top and bottom 3 and sides together 6*/
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+    /*Text align to center of images*/
+  text-align: center;
+}
+
+#comprehensiveExams img{
+  width: 3.5rem;
+}
+
+#customFittings img, #fastDelivery img {
+  width: 5rem;
 }
