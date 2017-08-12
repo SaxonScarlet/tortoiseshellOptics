@@ -138,3 +138,19 @@ h1 {
 .phiAppItem p {
   padding-top: 1rem;
 }
+
+/*Footer*/
+footer {
+  background-color: azure;
+    /*Left padding split with img*/
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+    /*Left padding split with footer*/
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
