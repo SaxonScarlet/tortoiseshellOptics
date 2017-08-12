@@ -86,7 +86,6 @@ h1 {
 }
 
 /*Services*/
-  /*Images*/
 .servicesContainer {
   display: flex;
   justify-content: center;
@@ -111,4 +110,31 @@ h1 {
 
 #customFittings img, #fastDelivery img {
   width: 5rem;
+}
+
+/*Philosophy and Appointments*/
+.phiAppContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.phiAppItem {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+    /*Font to white*/
+  color: white;
+    /*Use max because it must not change*/
+  max-width: 10rem;
+}
+
+.phiAppItem p {
+  padding-top: 1rem;
 }
