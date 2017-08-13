@@ -81,7 +81,7 @@ h1 {
   background-color: white;
   margin-top: 10rem;
   padding: 1.5rem 5rem;
-  /*Offset to the right*/
+    /*Offset to the right*/
   margin-right: -2rem;
 }
 
@@ -153,4 +153,50 @@ footer img {
     /*Left padding split with footer*/
   padding-left: 2rem;
   padding-right: 1rem;
+}
+
+/*Screen at medium*/
+@media only screen and (max-width: 1060px){
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  #main-banner {
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+      /*Offset to the right*/
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  nav.container {
+    max-width: 100%;
+  }
+}
+
+/*Screen at small*/
+@media only screen and (max-width: 560px){
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #main-banner {
+    margin: 9rem auto 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  nav.container {
+    max-width: 100%;
+  }
 }
