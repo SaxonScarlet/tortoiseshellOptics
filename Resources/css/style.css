@@ -27,6 +27,10 @@ header {
   padding-top: 1rem;
 }
 
+#smallScreenMenu {
+  display: none;
+}
+
 nav {
   background-color: cadetblue;
   color: white;
@@ -75,6 +79,7 @@ h1 {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
+  margin: 0.67rem 0;
 }
 
 #main-banner {
@@ -178,16 +183,34 @@ footer img {
   }
 }
 
-/*Screen at small*/
+/*Screen at small 700px*/
+@media only screen and (max-width: 700px){
+    /*Hide large screen menu*/
+  .menu ul {
+    display: none;
+  }
+
+    /*Show small screen menu*/
+  #smallScreenMenu {
+    display: block;
+  }
+}
+
+/*Screen at small 560*/
 @media only screen and (max-width: 560px){
+    /*Header section*/
   header {
     height: 17rem;
     background-position: 20%;
   }
 
+  .logo span {
+    display: none;
+  }
+
   #main-banner {
-    margin: 9rem auto 0 auto;
     padding: 0 1rem;
+    margin: 9rem auto 0 auto;
     width: 100%;
     text-align: center;
   }
@@ -198,5 +221,50 @@ footer img {
 
   nav.container {
     max-width: 100%;
+  }
+
+    /*ServicesContainer section*/
+  .servicesContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .servicesItem {
+    margin: 0.77rem;
+    font-size: 0.77rem;
+    height: auto;
+  }
+
+  .phiAppContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .phiAppItem {
+    width: auto;
+  }
+
+  .title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .phiAppItem p {
+    font-size: 0.77rem;
+    padding: 1rem;
+  }
+
+    /*Footer section*/
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
   }
 }
